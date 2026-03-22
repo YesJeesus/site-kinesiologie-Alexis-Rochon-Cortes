@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alexis Rochon-Cortes | Kinésiologie, Physiothérapie, Massothérapie</title>
+  <style>
+    :root{
+      --gold:#b8860b;
+      --gold2:#d4a514;
+      --cream:#fff8e8;
+      --line:#ecd8a5;
+      --text:#2f2a24;
+      --muted:#6b6254;
+      --card:#ffffff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);
+      background:linear-gradient(180deg,var(--cream),#fff,#f3efe7);
+      line-height:1.6;
+    }
+    .container{width:min(1150px,calc(100% - 32px));margin:0 auto}
+    header{
+      position:sticky;top:0;z-index:10;background:rgba(255,255,255,.92);
+      backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+    }
+    .gold-line{width:140px;height:5px;border-radius:999px;margin:16px 0 12px;background:linear-gradient(90deg,var(--gold),#f0c94d,#e7c26b)}
+    .head{display:flex;justify-content:space-between;gap:16px;align-items:center;padding-bottom:16px}
+    h1{margin:0;font-size:2.2rem}
+    .eyebrow,.section-kicker{font-size:.78rem;letter-spacing:.18em;text-transform:uppercase;font-weight:700;color:#946300}
+    .subtitle,.section-text{color:var(--muted)}
+    .badge{border:1px solid var(--line);background:#fff3cb;padding:10px 14px;border-radius:999px;color:#855d00;font-size:.92rem}
+    nav{display:flex;flex-wrap:wrap;gap:10px;padding-bottom:16px}
+    nav a{padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:#564d40;text-decoration:none}
+    nav a:hover{background:#fff4cf}
+    section{padding:72px 0}
+    .alt{background:rgba(255,255,255,.45)}
+    .grid2{display:grid;grid-template-columns:1.2fr .8fr;gap:24px}
+    .grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    .card{
+      background:var(--card);border:1px solid var(--line);border-radius:28px;
+      box-shadow:0 10px 30px rgba(184,134,11,.10);padding:24px;
+    }
+    .big{padding:32px}
+    .btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+    .btn{display:inline-block;padding:13px 18px;border-radius:18px;text-decoration:none;font-weight:700}
+    .solid{background:linear-gradient(90deg,#9f6c08,var(--gold2));color:#fff}
+    .outline{border:1px solid #d8b354;background:#fff;color:#8b6200}
+    .list{padding-left:20px}
+    .mini{background:#fff8e2;border-radius:18px;padding:14px}
+    .photo{
+      height:180px;border-radius:22px;padding:16px;display:flex;align-items:end;margin-bottom:14px;
+      background:linear-gradient(135deg,#eddcb5,#fff4cf,#ded7cc);font-weight:700;color:#8b6200
+    }
+    .contact-form{display:grid;gap:12px}
+    input,textarea{
+      width:100%;padding:14px;border:1px solid var(--line);border-radius:18px;font:inherit
+    }
+    textarea{min-height:130px}
+    .agenda{display:grid;gap:14px}
+    .agenda-item{display:flex;justify-content:space-between;align-items:center;gap:14px}
+    .pill{background:#fff8e2;padding:12px 14px;border-radius:18px;font-weight:700;color:#5d5549}
+    footer{border-top:1px solid var(--line);background:#fff;padding:32px 0}
+    .footer-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+    h2{font-size:2rem;margin:.2rem 0 .6rem}
+    h3{margin-top:0}
+    @media (max-width:900px){
+      .grid2,.grid3,.footer-grid{grid-template-columns:1fr}
+      .head,.agenda-item{flex-direction:column;align-items:flex-start}
+      h1{font-size:1.8rem} h2{font-size:1.6rem}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="gold-line"></div>
+      <div class="head">
+        <div>
+          <div class="eyebrow">Site professionnel</div>
+          <h1>Alexis Rochon-Cortes</h1>
+          <div class="subtitle">Kinésiologie • Physiothérapie • Massothérapie</div>
+        </div>
+        <div class="badge">Nom clairement affiché sur le site</div>
+      </div>
+      <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#entreprise">Entreprise</a>
+        <a href="#services">Services / Produits</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+        <a href="#aide">Aide</a>
+        <a href="#agenda">Agenda</a>
+        <a href="#ia">Notice IA</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="accueil">
+    <div class="container grid2">
+      <div class="card big">
+        <div class="eyebrow">Bienvenue</div>
+        <h2>Une expérience clinique raffinée dédiée au mouvement, à la récupération et au mieux-être.</h2>
+        <p class="section-text">
+          Ce site présente les services offerts par <strong>Alexis Rochon-Cortes</strong> dans les domaines de la kinésiologie,
+          de la physiothérapie et de la massothérapie. L'objectif est d'accompagner différentes clientèles vers une meilleure santé,
+          une récupération efficace et une amélioration durable de la qualité de vie.
+        </p>
+        <div class="btns">
+          <a class="btn solid" href="#services">Voir les services</a>
+          <a class="btn outline" href="#contact">Nous joindre</a>
+        </div>
+      </div>
+      <div class="card big">
+        <div class="eyebrow">Points clés</div>
+        <ul class="list">
+          <li>Présentation claire de l’entreprise</li>
+          <li>Services et produits affichés</li>
+          <li>Galerie de photos incluse</li>
+          <li>Page de contact disponible</li>
+          <li>Page d’aide intégrée</li>
+          <li>Agenda d’évènements présent</li>
+          <li>Notice sur l’utilisation de l’IA incluse</li>
+        </ul>
+        <div class="mini">Le nom <strong>Alexis Rochon-Cortes</strong> apparait clairement sur le site.</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="entreprise">
+    <div class="container">
+      <div class="section-kicker">Présentation de l’entreprise</div>
+      <h2>Une approche humaine, active et axée sur la santé</h2>
+      <p class="section-text">Cette entreprise met de l'avant des services liés à la kinésiologie, à la physiothérapie et à la massothérapie afin d'aider les personnes à bouger mieux, récupérer plus efficacement et prendre soin de leur santé globale.</p>
+      <div class="grid2">
+        <div class="card"><h3>Mission</h3><p>Offrir un accompagnement professionnel accessible et personnalisé pour favoriser l'activité physique, la prévention, la réadaptation et le bien-être.</p></div>
+        <div class="card"><h3>Vision</h3><p>Développer un milieu de services où le mouvement, la récupération et la relation d'aide se complètent dans une approche clinique, élégante et centrée sur la personne.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="alt">
+    <div class="container">
+      <div class="section-kicker">Services et produits</div>
+      <h2>Des solutions adaptées à différents besoins</h2>
+      <p class="section-text">Voici la liste des services et produits présentés sur le site.</p>
+      <div class="grid3">
+        <div class="card"><h3>Kinésiologie</h3><p>Évaluation des habitudes de vie, programmes d'exercices adaptés et amélioration de la condition physique.</p></div>
+        <div class="card"><h3>Physiothérapie</h3><p>Prévention des blessures, exercices correctifs et accompagnement pour retrouver mobilité et confort.</p></div>
+        <div class="card"><h3>Massothérapie</h3><p>Approches de détente et de relâchement musculaire pour favoriser récupération et bien-être général.</p></div>
+      </div>
+      <div class="card" style="margin-top:24px">
+        <h3>Liste des produits / offres</h3>
+        <div class="grid2">
+          <div class="mini">Évaluation initiale de la condition physique</div>
+          <div class="mini">Programme d'entraînement personnalisé</div>
+          <div class="mini">Suivi hebdomadaire en réadaptation</div>
+          <div class="mini">Massothérapie de détente</div>
+          <div class="mini">Massothérapie sportive</div>
+          <div class="mini">Ateliers sur la posture et la récupération</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galerie">
+    <div class="container">
+      <div class="section-kicker">Galerie de photos</div>
+      <h2>Un aperçu visuel des activités et services</h2>
+      <div class="grid3">
+        <div class="card"><div class="photo">Photo 1</div><h3>Évaluation fonctionnelle</h3><p>Analyse du mouvement, mobilité et posture dans un environnement professionnel.</p></div>
+        <div class="card"><div class="photo">Photo 2</div><h3>Entraînement supervisé</h3><p>Accompagnement personnalisé pour améliorer la santé, la force et l'endurance.</p></div>
+        <div class="card"><div class="photo">Photo 3</div><h3>Récupération musculaire</h3><p>Interventions orientées vers la détente, la récupération et la gestion des tensions.</p></div>
+        <div class="card"><div class="photo">Photo 4</div><h3>Prévention des blessures</h3><p>Conseils pratiques et exercices ciblés pour réduire les risques liés à l'activité physique.</p></div>
+        <div class="card"><div class="photo">Photo 5</div><h3>Suivi mieux-être</h3><p>Approche globale centrée sur l'équilibre entre activité physique, récupération et santé.</p></div>
+        <div class="card"><div class="photo">Photo 6</div><h3>Retour progressif à l'activité</h3><p>Planification sécuritaire après une pause, une douleur ou une blessure.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="alt">
+    <div class="container">
+      <div class="section-kicker">Page de contact</div>
+      <h2>Nous joindre facilement</h2>
+      <div class="grid2">
+        <div class="card">
+          <h3>Coordonnées</h3>
+          <p><strong>Courriel :</strong> contact@alexis-sante.ca</p>
+          <p><strong>Téléphone :</strong> (514) 555-2034</p>
+          <p><strong>Adresse :</strong> Montréal, Québec</p>
+          <div class="mini">Nom affiché clairement : <strong>Alexis Rochon-Cortes</strong></div>
+        </div>
+        <div class="card">
+          <h3>Formulaire de contact</h3>
+          <form class="contact-form">
+            <input type="text" placeholder="Votre nom" />
+            <input type="email" placeholder="Votre courriel" />
+            <input type="text" placeholder="Sujet de votre demande" />
+            <textarea placeholder="Décrivez votre besoin ou votre question"></textarea>
+            <button type="button" class="btn solid" style="border:none;cursor:pointer">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="aide">
+    <div class="container">
+      <div class="section-kicker">Page d’aide</div>
+      <h2>Questions fréquentes et accompagnement</h2>
+      <div class="card"><h3>Quelle est la différence entre la kinésiologie, la physiothérapie et la massothérapie ?</h3><p>La kinésiologie est centrée sur l'activité physique et les habitudes de vie, la physiothérapie vise la réadaptation fonctionnelle et la prévention des limitations physiques, tandis que la massothérapie est davantage orientée vers le relâchement musculaire et le bien-être corporel.</p></div>
+      <div class="card" style="margin-top:14px"><h3>Dois-je déjà être en forme pour prendre rendez-vous ?</h3><p>Non. Les services sont adaptés aux débutants, aux personnes en reprise d'activité ainsi qu'aux personnes actives qui souhaitent progresser ou prévenir des blessures.</p></div>
+      <div class="card" style="margin-top:14px"><h3>Comment choisir le bon service ?</h3><p>La page Contact permet de décrire votre besoin. Une orientation pourra ensuite être proposée selon votre objectif : douleur, remise en forme, récupération, posture ou mieux-être général.</p></div>
+      <div class="card" style="margin-top:14px"><h3>Est-ce que l’intelligence artificielle est utilisée ?</h3><p>Oui, certaines tâches de soutien comme la rédaction, l'organisation d'information ou la création de contenu peuvent être assistées par l'IA. Toutefois, les décisions professionnelles, l'interprétation clinique et la relation avec la clientèle demeurent sous supervision humaine.</p></div>
+    </div>
+  </section>
+
+  <section id="agenda" class="alt">
+    <div class="container">
+      <div class="section-kicker">Agenda / calendrier</div>
+      <h2>Évènements à venir</h2>
+      <div class="agenda">
+        <div class="card agenda-item"><div><div class="eyebrow">Atelier</div><h3>Atelier – Mobilité et posture</h3></div><div class="pill">5 avril</div></div>
+        <div class="card agenda-item"><div><div class="eyebrow">Conférence</div><h3>Conférence – Prévention des blessures</h3></div><div class="pill">12 avril</div></div>
+        <div class="card agenda-item"><div><div class="eyebrow">Évènement</div><h3>Journée découverte – Kinésiologie</h3></div><div class="pill">18 avril</div></div>
+        <div class="card agenda-item"><div><div class="eyebrow">Information</div><h3>Séance d'information – Massothérapie sportive</h3></div><div class="pill">25 avril</div></div>
+        <div class="card agenda-item"><div><div class="eyebrow">Clinique</div><h3>Clinique ouverte – Évaluation de la condition physique</h3></div><div class="pill">2 mai</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ia">
+    <div class="container">
+      <div class="section-kicker">Notice sur l’intelligence artificielle</div>
+      <h2>Utilisation de l’IA dans les activités du site</h2>
+      <div class="card">
+        <p>L'intelligence artificielle peut être utilisée comme outil d'assistance pour certaines tâches non décisionnelles, par exemple la rédaction de contenu, l'organisation d'information, la mise en page numérique ou l'amélioration de la communication sur le site.</p>
+        <p>Toutefois, les recommandations professionnelles, les interactions avec la clientèle, l'analyse des besoins et toute interprétation reliée à la santé demeurent sous responsabilité humaine. L'IA ne remplace pas le jugement professionnel, l'évaluation clinique ni le contact direct avec la personne.</p>
+        <p>Cette approche vise à assurer la transparence, la qualité de l'information et le respect de l'éthique dans les activités liées à la kinésiologie, à la physiothérapie et à la massothérapie.</p>
+        <div class="mini">Notice affichée sur le site pour répondre explicitement au règlement numéro 7.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><h3>Alexis Rochon-Cortes</h3><p class="section-text">Plateforme vitrine haut de gamme en kinésiologie, physiothérapie et massothérapie.</p></div>
+      <div><h3>Navigation rapide</h3><p class="section-text">Services • Agenda • Contact • Utilisation de l’IA</p></div>
+      <div><h3>Notice importante</h3><p class="section-text">Ce site contient une section dédiée à l'utilisation de l'intelligence artificielle dans les activités professionnelles et informatives.</p></div>
+    </div>
+  </footer>
+</body>
+</html>
